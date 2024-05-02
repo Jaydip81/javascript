@@ -1,0 +1,24 @@
+.notch{
+    height : 35px;
+    width : 35px;
+    margin: 3px;
+    border : none;
+    background-color : #31363F;
+    border-radius : 10px;
+    color : aliceblue;
+}
+#display{
+    background-color : aliceblue;
+    width : 175px;
+    height : 30px;
+    text-align : center;
+    border-radius : 10px;
+}
+.background{
+    background-color : #222831;
+    width : 185px;
+    padding : 15px;
+    border-radius : 15px;  
+    margin-top: 20%;
+    margin-left: 45%;
+}
