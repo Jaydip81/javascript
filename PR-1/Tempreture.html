@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tempreture</title>
+    <link rel="shortcut icon" href="images/forecast.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="dis">Temperature</h1>
+    <h1>Celsius to Fahrenheit</h1>
+    <label for="Cel">Celsius :</label>
+    <input type="number" placeholder="Enter Celsius" id="input-celsius">
+    <p id="op-fah"></p>
+    <input type="button" value="Celsius to Fahrenheit" onclick="CeltoFeh()">
+
+    <h1>Fahrenheit to Celsius</h1>
+    <label for="Fah">Fahrenheit :</label>
+    <input type="number" placeholder="Enter Fahrenheit" id="input-fahrenheit">
+    <p id="op-cal"></p>
+    <input type="button" value="Fahrenheit to Celsius" onclick="FehtoCel()">
+
+    <h1>kelvin to Fahrenheit</h1>
+    <label for="Kel">kelvin :</label>
+    <input type="number" placeholder="Enter kelvin" id="input-kelvin">
+    <p id="op-feh"></p>
+    <input type="button" value="kelvin to Fahrenheit" onclick="KeltoFah()">
+
+    <h1>Celsius to kelvin</h1>
+    <label for="Cel">Celsius :</label>
+    <input type="number" placeholder="Enter Celsius" id="input-celsius">
+    <p id="op-kel"></p>
+
+    <input type="button" value="Celsius to kelvin" onclick="CeltoKel()">
+
+    <a href="index.html">Back To Home</a>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
