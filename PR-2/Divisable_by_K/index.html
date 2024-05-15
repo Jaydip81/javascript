@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Range Of Number</title>
+</head>
+
+<body>
+    <input type="text" id="num"> <br/><br/>
+    <input type="text" id="K"> <br/><br/>
+    <input type="button" value="Range of num" onclick="Range_of_number()">
+    <p id="answer"></p>
+
+    <script>
+        function Range_of_number() {
+            let num = parseInt(document.getElementById('num').value);
+            let K = parseInt(document.getElementById('K').value);
+            let asset = "";
+
+            for (let a = 1; a <= num; a++) {
+                if (a % K == 0) {
+                    asset += a;
+                    asset += "<br>";
+                }
+            }
+            document.getElementById('answer').innerHTML = asset;
+        }
+    </script>
+</body>
+
+</html>

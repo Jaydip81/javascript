@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Amatic+SC);
+
+body {
+  background: linear-gradient(to right,
+      #6f7280,
+      #2a2c3c,
+      #181827,
+      #833ab4,
+      #5953f5,
+      #69b0a2);
+  background-size: 400% 400%;
+  animation: body 10s infinite ease-in-out;
+}
+
+@keyframes body {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.form {
+  position: relative;
+  width: 300px;
+  padding-top: 10%;
+  margin-left: 42%;
+  font-size: 28px;
+  color: aliceblue;
+  font-family: 'Amatic SC';
+}
+
+input {
+  color: #000000;
+  font-size: 22px;
+  background-color: transparent;
+  justify-content: end;
+  width: 100%;
+  box-sizing: border-box;
+  padding-inline: 0.5em;
+  border: none;
+  color: aliceblue;
+  border-bottom: 1px solid #ffffff63;
+  outline: none;
+  margin-left: 25px;
+  padding: 5px;
+  font-family: 'Amatic SC';
+}
+
+#result {
+  margin-left: 42%;
+  font-family: 'Amatic SC';
+  font-size: 22px;
+  color: aliceblue;
+}
+
+.input-border {
+  position: absolute;
+  width: 0%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+}
+
+.yo {
+  padding: 10px;
+  outline: none;
+  font-size: 28px;
+  margin-top: 15px;
+  transition: ease-in-out 0.14s;
+  border: none;
+  background-color: aqua;
+  font-family: 'Amatic SC';
+  color: rgb(255, 0, 47);
+}
+
+.yo:hover {
+  background-color: #5953f5;
+}

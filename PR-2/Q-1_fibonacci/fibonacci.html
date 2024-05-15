@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="png-transparent-golden-spiral-golden-ratio-annulus-arrow-blue-spiral-logo-removebg-preview.png" type="image/x-icon">
+    <title>fibonacci</title>
+</head>
+
+<body>
+    <input type="text" id="num">
+    <input type="button" value="fibonacci_num" onclick="fibnumber()">
+    <p id="display"></p>
+
+    <script>
+        function fibnumber() {
+            let n = parseInt(document.getElementById('num').value);
+            let val = " ", a, asset = 0, asset2 = 1, fib;
+
+            for(a = 1; a <= n; a++) {
+                val += asset + ',';
+                fib = asset + asset2;
+                asset = asset2;
+                asset2 = fib;
+            }
+            document.getElementById('display').innerHTML = val;
+        }
+    </script>
+</body>
+
+</html>

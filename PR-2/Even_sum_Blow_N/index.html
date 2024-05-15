@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="SUM-logo-white-b449da3600a12904e716bc689c76dc95-removebg-preview.png" type="image/x-icon">
+    <title>Even_sum_blow_N</title>
+</head>
+
+<body>
+    <input type="text" id="num">
+    <input type="button" value="Result" onclick="even_sum_blow_n()">
+    <p id="answer"></p>
+    <p id="sum"></p>
+
+    <script>
+        function even_sum_blow_n() {
+            let num = parseInt(document.getElementById('num').value);
+            let asset = "";
+            let sum = 0;
+
+            for (let a = 1; a <= num; a++) {
+                if (a >= 0 && a % 2 == 0) {
+                    asset += a;
+                    sum += a;
+                    asset += "<br>";
+                }
+            }
+            document.getElementById('answer').innerHTML = asset;
+            document.getElementById('sum').innerHTML = sum;
+        }
+    </script>
+</body>
+
+</html>

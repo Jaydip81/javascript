@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Red and White Printing</title>
+</head>
+<body>
+  <label for="Input">Enter a number:</label>
+  <input type="text" id="red">
+  <input type="button" value="Enter number" onclick="Red_and_White()">
+    <p id="display"></p>
+  <script>
+    function Red_and_White() {
+        let n = parseInt(document.getElementById('red').value);
+        let val = "";
+        for (let i = 1; i <= n; i++) {
+            val += "Red and White" + "<br/><br/>";
+        }
+        document.getElementById('display').innerHTML = val;
+    }
+  </script>
+</body>
+</html>

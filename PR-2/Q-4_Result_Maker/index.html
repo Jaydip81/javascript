@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>school grade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form>
+        <table class="form">
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name"></td>
+            </tr>
+            <tr>
+                <td><label for="std">Standard:</label></td>
+                <td><input type="text" id="std"></td>
+            </tr>
+            <tr>
+                <td><label for="soacial_science">Social_studies:</label></td>
+                <td><input type="text" id="Soacial_studies"></td>
+            </tr>
+            <tr>
+                <td><label for="english">English:</label></td>
+                <td><input type="text" id="English"></td>
+            </tr>
+            <tr>
+                <td><label for="Genral_knowledge">Genral_knowledge:</label></td>
+                <td><input type="text" id="Genral_knowledge"></td>
+            </tr>
+            <tr>
+                <td><label for="Mathematics">Mathematics:</label></td>
+                <td><input type="text" id="Mathematics"></td>
+            </tr>
+            <tr>
+                <td><label for="Chemistry">Chemistry:</label></td>
+                <td><input type="text" id="Chemistry"></td>
+            </tr>
+            <tr class="button">
+                <td colspan="2"><button class="yo" type="button" onclick="calculateGrade()">Calculate Grade</button></td>
+            </tr>
+        </table>
+    </form>
+    <br/>
+    <div id="result"></div>
+
+
+    <script>
+        function calculateGrade() {
+
+            var name = document.getElementById("name").value;
+            var standard = document.getElementById("std").value;
+            var mar_1 = parseFloat(document.getElementById("Soacial_studies").value);
+            var mar_2 = parseFloat(document.getElementById("English").value);
+            var mar_3 = parseFloat(document.getElementById("Genral_knowledge").value);
+            var mar_4 = parseFloat(document.getElementById("Mathematics").value);
+            var mar_5 = parseFloat(document.getElementById("Chemistry").value);
+
+
+            if (mar_1 < 33 || mar_2 < 33 || mar_3 < 33 || mar_4 < 33 || mar_5 < 33) {
+                document.getElementById("result").innerHTML = "Failed";
+
+            }
+
+            var totalMarks = mar_1 + mar_2 + mar_3 + mar_4 + mar_5;
+            var percentage = (totalMarks / 500) * 100;
+
+
+            var grade;
+            if (percentage >= 90) {
+                grade = 'A+';
+            } else if (percentage >= 80) {
+                grade = 'A';
+            } else if (percentage >= 70) {
+                grade = 'B';
+            } else if (percentage >= 60) {
+                grade = 'C';
+            } else if (percentage >= 50) {
+                grade = 'D';
+            }
+
+            else {
+                grade = 'F';
+            }
+
+            var table = "<table border='1'>";
+            table += "<tr><td>Name:</td><td>" + name + "</td></tr>";
+            table += "<tr><td>Standard:</td><td>" + standard + "</td></tr>";
+            table += "<tr><td>Total Marks:</td><td>" + totalMarks + "</td></tr>";
+            table += "<tr><td>Percentage:</td><td>" + percentage + "%</td></tr>";
+            table += "<tr><td>Grade:</td><td>" + grade + "</td></tr>";
+            table += "</table>";
+
+            document.getElementById("result").innerHTML = table;
+        }
+    </script>
+</body>
+
+</html>

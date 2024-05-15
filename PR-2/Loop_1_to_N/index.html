@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="number-multiples-for-worksheets-and-flashcards-1-to-10-times-tables-to-learn-multiplication-fact-and-skip-counting-math-clipart-for-elementary-school-vector-removebg-preview.png" type="image/x-icon">
+    <title>For Loop</title>
+</head>
+
+<body>
+    <input type="text" id="num">
+    <input type="button" value="1_to_N" onclick="forloop()">
+    <p id="answer"></p>
+
+    <script>
+        function forloop() {
+            let N = parseInt(document.getElementById('num').value);
+            let Num = "";
+            for (let i = 1; i <= N; i++) {
+                Num += i;
+                Num += "<br>";
+            }
+
+            document.getElementById('answer').innerHTML = Num;
+        }
+    </script>
+</body>
+
+</html>

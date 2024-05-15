@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon"
+        href="png-transparent-prime-number-mathematics-composite-number-prime-number-s-text-logo-number-removebg-preview.png"
+        type="image/x-icon">
+    <title>Prime_number</title>
+</head>
+
+<body>
+    <input type="text" id="prime">
+    <input type="button" value="Prime_number" onclick="Prime_number()">
+    <p id="display"></p>
+    <script>
+        function Prime_number() {
+            let num = parseInt(document.getElementById('prime').value)
+            let string = " ", count = " ", a, b;
+            for (a = 1; a <= num; a++) {
+                count = 0;
+                for (b = 1; b <= a; b++) {
+                    if (a % b == 0) {
+                        count++;
+                    }
+                }
+                if (count == 2) {
+                    string += a + " ";
+                }
+            }
+            document.getElementById('display').innerHTML = string;
+        }
+    </script>
+</body>
+
+</html>
