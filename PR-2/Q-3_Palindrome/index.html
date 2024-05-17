@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+<body>
+    <input type="text" id="palindrome_a">
+    <input type="button" value="Click_here" onclick="palindrome()">
+    <p id="display"></p>
+
+    <script>
+        function palindrome() {
+            let n = parseInt(document.getElementById("palindrome_a").value)
+            let main = n
+            let  rem = 0
+            let ans = 0
+            while(n != 0) {
+                rem = n % 10
+                ans = ans * 10 + rem
+                n = parseInt(n/10)
+            }
+            console.log(ans)
+            if(main == ans){
+                document.getElementById('display').innerHTML = "Palidrome";
+            }
+            else{
+                document.getElementById('display').innerHTML = "Not palidrome";
+            }
+        }
+    </script>
+</body>
+</html>
