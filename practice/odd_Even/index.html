@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odd or Even</title>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <input type="text" id="check">
+    <input type="button" value="odd or even" onclick="odd_even()">
+    <p id="display"></p>
+</body>
+
+<script>
+    function odd_even() {
+        let i = document.getElementById('check').value
+        let result;
+
+        if (i % 2 == 0) {
+            result = "even number"
+        }
+        else {
+            result = "odd number"
+        }
+
+        document.querySelector('#display').innerHTML = result
+    }
+</script>
+
+</html>

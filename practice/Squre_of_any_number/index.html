@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="Enter">
+    <input type="button" value="Squre_it" onclick="Squre_it()">
+    <p id="display"></p>
+
+    <script>
+        function Squre_it(){
+            let a = document.getElementById("Enter"); 
+            let squre;
+
+            squre = a.value * a.value;
+            document.getElementById("display").innerHTML = "The squre of " + a.value + " is " + squre;
+        }
+    </script>
+</body>
+</html>
