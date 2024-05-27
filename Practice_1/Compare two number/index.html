@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare_two_number</title>
+</head>
+
+<body>
+    <input type="number" name="" id="num-1" placeholder="Enter a number">
+    <input type="number" name="" id="num-2" placeholder="Enter a number">
+    <input type="button" value="find two " onclick="comparetwo()">
+    <p id="false"></p>
+    <p id="true"></p>
+    <p id="display"></p>
+
+    <script>
+        function comparetwo() {
+            let a = parseInt(document.getElementById('num-1').value);
+            let b = parseInt(document.getElementById('num-2').value);
+            let msg;
+
+            document.getElementById('false').innerHTML = Boolean(a > b);
+            document.getElementById('true').innerHTML = Boolean(a < b);
+            document.getElementById('display').innerHTML = Boolean(a == b);
+        }
+    </script>
+</body>
+
+</html>
