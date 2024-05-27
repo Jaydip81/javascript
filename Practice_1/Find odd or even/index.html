@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find_odd_or_even</title>
+</head>
+
+<body>
+    <input type="number" name="" id="num">
+    <input type="button" value="find odd & even" onclick="oddenven()">
+    <p id="display"></p>
+
+    <script>
+        function oddenven() {
+            let num = parseInt(document.getElementById('num').value);
+            let msg;
+
+            if (num % 2 == 0) {
+                msg = "number is even";
+            }
+            else if (num == 0) {
+                msg = "number is a zero";
+            }
+            else {
+                msg = "number is odd";
+            }
+            document.getElementById('display').innerHTML = msg
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy_Wood_cutter</title>
+</head>
+
+<body>
+    <input type="number" name="" id="num" placeholder="Enter number">
+    <input type="button" value="Easy Wood Cutter" onclick="wood()">
+    <p id="display"></p>
+
+
+    <script>
+        function wood() {
+            let a = parseInt(document.getElementById('num').value);
+            let msg;
+
+            if (a % 3 == 0) {
+                msg = "YES";
+            }
+            else {
+                msg = "NO";
+            }
+            document.getElementById("display").innerHTML = msg;
+        }
+    </script>
+</body>
+
+</html>

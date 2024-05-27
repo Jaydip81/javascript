@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australia v\s England</title>
+</head>
+
+<body>
+    <input type="number" name="" id="num-1" placeholder="Enter Australia run">
+    <input type="number" name="" id="num-2" placeholder="Enter England run">
+    <input type="button" value="Who is win" onclick="win()">
+    <p id="display"></p>
+
+    <script>
+        function win() {
+            let a = parseInt(document.getElementById('num-1').value);
+            let e = parseInt(document.getElementById('num-2').value);
+            let msg;
+
+            if (a > e) {
+                msg = "Australia";
+            }
+            else if (a == e) {
+                msg = "Tie";
+            }
+            else {
+                msg = "England";
+            }
+            document.getElementById('display').innerHTML = msg;
+        }
+    </script>
+</body>
+
+</html>

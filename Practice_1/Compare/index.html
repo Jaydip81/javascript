@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare</title>
+</head>
+
+<body>
+    <input type="number" name="" id="num-1" placeholder="Enter a number">
+    <input type="number" name="" id="num-2" placeholder="Enter a number">
+    <input type="number" id="num-3" placeholder="Enter a number">
+    <input type="button" value="find two " onclick="compare()">
+    <p id="false"></p>
+    <p id="display"></p>
+
+    <script>
+        function compare() {
+            let a = parseInt(document.getElementById('num-1').value);
+            let b = parseInt(document.getElementById('num-2').value);
+            let c = parseInt(document.getElementById('num-3').value);
+            let msg;
+            document.getElementById('false').innerHTML = Boolean(a > b);
+
+            a = a + c;
+
+            document.getElementById('display').innerHTML = Boolean(a > b);
+
+        }
+    </script>
+</body>
+
+</html>
