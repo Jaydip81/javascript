@@ -1,0 +1,16 @@
+This code is a simple HTML page with JavaScript that allows you to add and remove data from a table.
+
+- It starts with an HTML structure defining a title, an input field to add data, a button to add the data, and an empty table.
+- When you click the "Add Data" button, the `addData` function is called.
+- The `addData` function:
+  - Retrieves the value entered in the input field.
+  - Checks if the input is empty and alerts the user if it is.
+  - Inserts a new row into the table.
+  - Adds the input value into the first cell of the new row.
+  - Adds a "Remove" button into the second cell of the new row.
+- Clicking the "Remove" button triggers the `removeData` function.
+- The `removeData` function:
+  - Identifies the row where the button was clicked.
+  - Removes that row from the table.
+
+That's it! It's a basic setup for adding and removing data from a table dynamically using JavaScript.
