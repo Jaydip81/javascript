@@ -1,38 +1,37 @@
-function bmi()
+function BMI()
 {
-    let heightin = document.getElementById('height').value;
-    let weightin = document.getElementById("weight").value;
-    bmical(heightin,weightin,age);
+    let Height_in = document.getElementById('height').value;
+    let Weight_in = document.getElementById("weight").value;
+    BMI_Cal(Height_in,Weight_in,age);
 }
-
-function bmical(heightin,weightin){
+function BMI_Cal(Height_in,Weight_in){
     
     let BMI, height, weight,msg;
 
-    height = heightin;
-    weight = weightin;
+    height = Height_in;
+    weight = Weight_in;
     BMI = weight / (height * height);
 
     
     if (BMI < 18.5) 
     {
-        msg = "BMI is Underweight";
+        msg = "you are too Underweight";
     }
      else if (BMI > 18.5 && BMI < 24.9) 
     {
-        msg = "BMI is Normal weight";
+        msg = "your is weight Normal";a
     } 
     else if (BMI > 25 && BMI < 29.9) 
     {
-        msg = "BMI is overweight";
+        msg = "you are too overweight";
     } 
     else if(BMI > 30)
     {
-        msg = "BMI is Obesity";
+        msg = "you are Obesity";
     }
     else 
     {
-        msg = "ERROR: Enter correct data";
+        msg = "ERROR ! try agian my friend";
     }
 
     document.getElementById('display').innerHTML = msg;
