@@ -1,17 +1,17 @@
-function Emi() {
+function EMI() {
 
-    let amount = parseInt(document.getElementById("amount").value);
-    let rate = parseInt(document.getElementById("rate").value);
-    let month = parseInt(document.getElementById("month").value);
+    let Value = parseInt(document.getElementById("Amount").value);
+    let rate = parseInt(document.getElementById("Rate").value);
+    let month = parseInt(document.getElementById("Month").value);
 
-    calculate(amount,rate,month);
+    calculate(Value,rate,month);
 }
 
-function calculate(amount,rate,month)
+function calculate(Value,rate,month)
 {
-    let interest = (amount * (rate * 0.01)) / month;
+    let interest = (Value * (rate * 0.01)) / month;
      
-    let total = ((amount / month) + interest).toFixed(2);
+    let total = ((Value / month) + interest).toFixed(2);
  
     document.getElementById("display").innerHTML = "EMI : (₹)" + total;
 }
