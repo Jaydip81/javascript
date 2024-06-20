@@ -17,7 +17,7 @@ let allSlides = [
 ];
 
 function AddImages() {
-  let slider = document.getElementById("new-slider");
+  let slider = document.querySelector(".slider");
 
   allSlides.forEach((val, index) => {
     let div = document.createElement("div");
@@ -46,13 +46,13 @@ AddImages();
 let activeSlide = 0;
 const slides = document.querySelectorAll(".slide");
 
-let left = document.querySelector("#left-click");
+let left = document.querySelector("#click-left");
 
 left.onclick = function () {
   SwipePrevSlide();
 };
 
-let right = document.querySelector("#right-click");
+let right = document.querySelector("#click-right");
 
 right.onclick = function () {
   SwipenewSlide();
