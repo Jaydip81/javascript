@@ -30,6 +30,6 @@ document.addEventListener("DOMContentLoaded", function () {
       Quote_Display.textContent = Quotes[Quote_index];
       Quote_index = (Quote_index + 1) % Quotes.length;
     }
-  }, 150);
+  }, 1000);
 });
 
