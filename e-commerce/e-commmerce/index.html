@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="images/favicon/e-commerce.png"
+      type="image/x-icon"
+    />
+    <title>E-Commerce</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container-nav">
+      <div class="navtabs">
+        <div class="navtab active">Home</div>
+        <div class="navtab"><a href="">About</a></div>
+        <div class="navtab"><a href="">Contact</a></div>
+        <div class="navtab"><a href="">Blog</a></div>
+        <div class="navtab"><a href="">Our Products</a></div>
+        <div class="navtab"><a href="../login_singup/login.html">Login</a></div>
+      </div>
+    </div>
+    <!-- slider-section -->
+    <div class="swiper-a">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/banner/collection.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="images/banner/Blue and Brown Sale Promotion Banner.png"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/banner/furniture.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/banner/new .png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/banner/shoes.png" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/banner/man.png" alt="" />
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <!-- cards -->
+    <div class="cards">
+      <div class="container">
+        <h2>Product Basket</h2>
+        <ul id="cart"></ul>
+        <div id="total">Total amount: $0</div>
+        <main>
+          <div class="cards">
+            <div class="card" id="sofa">
+              <img src="images/sofa.png" alt="sofa" />
+              <h2>sofa</h2>
+              <p>
+                <span class="price">84$</span>
+              </p>
+              <button class="button type1">
+                <span class="btn-txt">Add to cart</span>
+              </button>
+            </div>
+            <div class="card" id="purse">
+              <img src="images/purse.png" alt="purse" />
+              <h2>purse</h2>
+              <p>
+                <span class="price">39$</span>
+              </p>
+              <button class="button type1">
+                <span class="btn-txt">Add to cart</span>
+              </button>
+            </div>
+            <div class="card" id="shoes">
+              <img src="images/shoes.png" alt="shoes" />
+              <h2>shoes</h2>
+              <p>
+                <span class="price">54$</span>
+              </p>
+              <button class="button type1">
+                <span class="btn-txt">Add to cart</span>
+              </button>
+            </div>
+            <div class="card" id="t-shirt">
+              <img src="images/t-shirt.png" alt="t-shirt" />
+              <h2>t-shirt</h2>
+              <p>
+                <span class="price">33$</span>
+              </p>
+              <button class="button type1">
+                <span class="btn-txt">Add to cart</span>
+              </button>
+            </div>
+            <div class="card" id="table">
+              <img src="images/table.png" alt="table" />
+              <h2>table</h2>
+              <p>
+                <span class="price">67$</span>
+              </p>
+              <button class="button type1">
+                <span class="btn-txt">Add to cart</span>
+              </button>
+            </div>
+            <div class="card" id="pot">
+              <img src="images/flower.png" alt="flower-pot" />
+              <h2>flower-pot</h2>
+              <p>
+                <span class="price">90$</span>$
+              </p>
+              <button class="button type1">
+                <span class="btn-txt">Add to cart</span>
+              </button>
+            </div>
+            <div class="card" id="watch">
+              <img src="images/watch.png" alt="watch" />
+              <h2>watch</h2>
+              <p>
+                <span class="price">800$</span>
+              </p>
+              <button class="button type1">
+                <span class="btn-txt">Add to cart</span>
+              </button>
+            </div>
+            <div class="card" id="laptop">
+              <img src="images/laptop.png" alt="laptop" />
+              <h2>laptop</h2>
+              <p>
+                <span class="price">2400$</span>
+              </p>
+              <button class="button type1">
+                <span class="btn-txt">Add to cart</span>
+              </button>
+            </div>
+            <div class="card" id="s24">
+              <img src="images/s24.jpg" alt="s24" />
+              <h2>S24</h2>
+              <p>
+                <span class="price">1499$</span>
+              </p>
+              <button class="button type1">
+                <span class="btn-txt">Add to cart</span>
+              </button>
+            </div>
+            <div class="card" id="chair">
+              <img src="images/chair.png" alt="chair" />
+              <h2>chair</h2>
+              <p>
+                <span class="price">88$</span>
+              </p>
+              <button class="button type1">
+                <span class="btn-txt">Add to cart</span>
+              </button>
+            </div>
+            <div class="card" id="lamp">
+              <img src="images/lamp.png" alt="lamp" />
+              <h2>lamp</h2>
+              <p>
+                <span class="price">25$</span>
+              </p>
+              <button class="button type1">
+                <span class="btn-txt">Add to cart</span>
+              </button>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        speed: 600,
+        parallax: true,
+        autoplay: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
