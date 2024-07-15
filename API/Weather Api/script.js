@@ -13,13 +13,19 @@ document.getElementById("sbm").addEventListener("click", function (e) {
       let iconurl =
         "http://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
 
-      icon.src = iconurl;
+      icon.src = iconurl; 
     });
+
   fetch(weatherdate)
     .then((response) => response.json())
     .then((data) => {
+      console.log("FORECAST");
+      console.log(data);
+
+      document.getElementById("forecast").innerHTML = "";
+
       for (let i = 0; i < data.list.length; i++) {
-        let div = document.createElement("div");
+        let div = document.createElement("div");  
         div.innerHTML = `
                 <h3>${data.list[i].dt_txt.slice(0, 10)}</h3>
                 <img src="http://openweathermap.org/img/w/${
