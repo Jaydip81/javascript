@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  text-align: center;
+}
+form {
+  margin-bottom: 20px;
+}
+input[type="text"] {
+  padding: 10px;
+  width: 200px;
+  font-size: 16px;
+}
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#res {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+#forecast {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#forecast div {
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+#forecast h3 {
+  margin-bottom: 5px;
+}
+#forecast img {
+  width: 50px;
+  height: 50px;
+}
+#forecast p {
+  margin: 5px 0;
+}
+hr {
+  margin: 10px 0;
+}
