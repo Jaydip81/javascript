@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="wrapper">
+          <div class="logo">
+            <a href="#"> Amazon </a>
+          </div>
+          <div class="header-links d-flex">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Products</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="images/slide 1.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="images/slide 2.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="images/slide 3.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="images/slide 4.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="images/slide 5.jpg" alt="" /></div>
+        <div class="swiper-slide"><img src="images/slide 6.jpg" alt="" /></div>
+      </div>
+    </div>
+
+    
+
+    <div id="product-container"></div>
+
+    <span id="cart-count">Cart (0)</span>
+    <div id="cart-items">
+  <h2>Shopping Cart</h2>
+  <ul id="cart-list"></ul>
+</div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      autoplay = true;
+      var swiper = new Swiper(".mySwiper", {});
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
