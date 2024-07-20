@@ -1,0 +1,136 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+header {
+  padding: 10px 15px;
+  border: 1px solid #333;
+}
+header .logo a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Acme", sans-serif;
+  display: inline-block;
+}
+header ul {
+  list-style: none;
+  margin: 0 20px 0 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+header ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+header ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: math;
+  margin: 0 0px;
+  padding: 10px 5px;
+  display: inline-block;
+}
+header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+header .wrapper .header-links {
+  margin-left: auto;
+}
+.primary_btn {
+  background: #000;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 480px;
+}
+
+.swiper-slide {
+  margin-top: 45px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 1400px;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.product {
+  border: 1px solid #464242;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 35px;
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+.product img {
+  max-width: 100%;
+  height: auto; 
+}
+.product-name {
+  font-weight: bold;
+}
+.product-price {
+  color: #007bff; 
+}
+.add-to-cart {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.add-to-cart:hover {
+  background-color: #0056b3;
+}
+
+.cart-count{
+  text-align: center;
+}
